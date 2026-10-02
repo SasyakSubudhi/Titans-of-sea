@@ -16,6 +16,7 @@ First practical demo: float and sail one placeholder ship while the clock and we
 
 Each milestone adds complete code, tuned logic data, B sandbox, tests, debug triggers and design notes. Integration into Main_World requires the teammate's available services and an agreed edit window. Networking and optional features wait until the required loop works.
 
-Next implementation: ship sailing using IPlayerInput, sail controls/anchor, then player movement and wheel interactions. Clock/weather are implemented and Unity tests passed.
+Sailing, sail controls/anchor and game states are now implemented and sandbox-tested (12 EditMode / 3 PlayMode). Next: player movement, swimming, moving decks and wheel/sail interactions. Detailed task evidence is tracked in CHECKLIST_B.md.
 
 If behind schedule, cut optional co-op preparation, New Game+, black market, Leviathan, extra ship classes, diving/caves, multiple endings and hired workers in that order. Preserve sailing, treasure, combat, base defence, save/load and story.
+

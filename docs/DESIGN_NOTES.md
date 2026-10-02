@@ -6,7 +6,7 @@
 - Events use explicit raise methods; only GameEvents can invoke them. Events and services reset at SubsystemRegistration so repeated Play sessions do not retain static state when domain reload is disabled.
 - Registry is main-thread only, permits real providers to replace fallbacks, rejects competing real providers and removes only the matching owner. Consumers refresh references on service changes. An enabled mock re-registers after real-provider removal.
 - Buoyancy uses vertical support at local hull sample points. Different depths generate physical roll/pitch; GetNormal is available but no separate rotation force fights the Rigidbody. The model is an arcade prototype rather than displaced-volume naval simulation.
-- Six-point ship and four-point box presets allocate only during initialization. Each FixedUpdate reuses batch arrays. Cost is one batch and one force per point per physics step; profile before scaling to fleets.
+- Eight-point ship and four-point box presets allocate only during initialization. Each FixedUpdate reuses batch arrays. Cost is one batch and one force per point per physics step; profile before scaling to fleets.
 - Defaults assume gravity points down world Y, physics roots have unit scale, Fixed Timestep is 0.02 seconds and the ship does not spawn upside down. Runtime changes to the number of sampling points require Configure/settings reinitialization.
 - Default equilibrium: sample depth = FloatDepth/LiftMultiplier. For ship points at -0.5m, FloatDepth .75m and lift 2, hull origin settles near Y=.125m on flat water.
 - No Main_World editing, input-device integration, production rendering, gameplay networking or publishing in this delivery.
@@ -15,3 +15,9 @@
 - Clock uses double precision internally and emits all elapsed NewDay events; restore/debug time changes deliberately do not replay them. Weather uses an owned seeded System.Random, shortest-path normalized wind blending and a per-frame Changed announcement. A still owns all production presentation.
 - Real project now created at TitansUnity with editor 6000.3.25f1, URP 17.3.0 and Test Framework 1.6.0. Future game edits and the shared repository belong in TitansUnity. Removed unused purchasing, analytics and multiplayer-center template packages. All nine EditMode and two PlayMode checks passed; no graphics/FPS claim.
 - Fixed instant-weather changes so subsequent frames retain the target instead of blending backward. Added regression coverage and reran Unity tests. Physics stability runs for five simulated minutes at 10× speed and restores the prior time scale.
+
+## Prototype: sailing and game states
+
+Wind direction is air travel direction. The point-of-sail curve peaks at a broad reach and fades to zero in a 35-degree upwind no-go zone. Boom alignment and sail raise scale thrust. Rudder authority depends on forward speed; reverse travel reverses steering. Lateral drag suppresses excessive drift. The anchor applies bounded horizontal acceleration, preserving buoyancy. Numbers live in B_SloopSailing. A production input reader can replace the fallback; gameplay consumes IPlayerInput. The ship exposes IShipState, with intact hull values explicitly pending damage/flooding implementation. No shared interface changed.
+
+GameSession validates transitions and exposes state events. GameStateController gates input and physics, restoring prior state when disabled. Clock time advances only in Playing; cutscene simulation remains live while gameplay input is disabled. B_Sandbox_Sailing and its controls are labelled test apparatus. Headless Unity regression passed: 12 EditMode / 3 PlayMode, including travel, steering, anchor, pause and five simulated minutes of eight-point buoyancy. Player interaction and A integration remain pending.

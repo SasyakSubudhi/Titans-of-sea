@@ -14,7 +14,8 @@ namespace TitansOfTheSea.Ship
         public Vector3 CentreOfMass = new Vector3(0, -0.35f, 0);
         public Vector3[] LocalPoints = {
             new Vector3(-1.2f,-0.5f,-2.5f), new Vector3(1.2f,-0.5f,-2.5f),
-            new Vector3(-1.2f,-0.5f,0), new Vector3(1.2f,-0.5f,0),
+            new Vector3(-1.2f,-0.5f,-0.83f), new Vector3(1.2f,-0.5f,-0.83f),
+            new Vector3(-1.2f,-0.5f,0.83f), new Vector3(1.2f,-0.5f,0.83f),
             new Vector3(-1.2f,-0.5f,2.5f), new Vector3(1.2f,-0.5f,2.5f)
         };
     }

@@ -8,6 +8,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/_Project/Scenes/B_Sandbox_Buoyancy.unity
     guid: c0c62777520a9704c8a0fa41aacca199
+  - enabled: 1
+    path: Assets/_Project/Scenes/B_Sandbox_Sailing.unity
+    guid: 9e8f2c1be3d9a7541a2259426135c7e9
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   m_UseUCBPForAssetBundles: 0

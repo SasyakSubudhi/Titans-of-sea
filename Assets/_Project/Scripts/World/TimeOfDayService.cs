@@ -45,7 +45,8 @@ namespace TitansOfTheSea.World
         private void OnDisable() => Services.Unregister<ITimeOfDay>(this);
         private void Update()
         {
-            if (!Paused) _clock.Advance((double)Time.deltaTime * _speed);
+            if (!Paused && (!Services.TryGet<GameSession>(out var session) || session.AdvancesWorldTime))
+                _clock.Advance((double)Time.deltaTime * _speed);
         }
         private void RelayNewDay(int day) => NewDay?.Invoke(day);
         public void SetHour(float hour) => _clock.Restore(DayNumber, hour);
