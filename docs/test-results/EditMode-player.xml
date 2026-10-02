@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="12" result="Passed" total="12" passed="12" failed="0" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-10-02 11:14:07Z" end-time="2026-10-02 11:14:07Z" duration="0.0638551">
+  <test-suite type="TestSuite" id="1000" name="TitansUnity" fullname="TitansUnity" runstate="Runnable" testcasecount="12" result="Passed" start-time="2026-10-02 11:14:07Z" end-time="2026-10-02 11:14:07Z" duration="0.063855" total="12" passed="12" failed="0" inconclusive="0" skipped="0" asserts="0">
+    <properties>
+      <property name="platform" value="EditMode" />
+    </properties>
+    <test-suite type="Assembly" id="1017" name="TitansOfTheSea.Tests.EditMode.dll" fullname="C:/Users/SASYAK SUBUDHI/OneDrive/Documents/Titans of the Sea/TitansUnity/Library/ScriptAssemblies/TitansOfTheSea.Tests.EditMode.dll" runstate="Runnable" testcasecount="12" result="Passed" start-time="2026-10-02 11:14:07Z" end-time="2026-10-02 11:14:07Z" duration="0.055695" total="12" passed="12" failed="0" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="39244" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="EditMode" />
+        <property name="EditorOnly" value="True" />
+      </properties>
+      <test-suite type="TestSuite" id="1018" name="TitansOfTheSea" fullname="TitansOfTheSea" runstate="Runnable" testcasecount="12" result="Passed" start-time="2026-10-02 11:14:07Z" end-time="2026-10-02 11:14:07Z" duration="0.054963" total="12" passed="12" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <test-suite type="TestSuite" id="1019" name="Tests" fullname="TitansOfTheSea.Tests" runstate="Runnable" testcasecount="12" result="Passed" start-time="2026-10-02 11:14:07Z" end-time="2026-10-02 11:14:07Z" duration="0.054641" total="12" passed="12" failed="0" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <test-suite type="TestFixture" id="1001" name="FoundationTests" fullname="TitansOfTheSea.Tests.FoundationTests" classname="TitansOfTheSea.Tests.FoundationTests" runstate="Runnable" testcasecount="4" result="Passed" start-time="2026-10-02 11:14:07Z" end-time="2026-10-02 11:14:07Z" duration="0.040146" total="4" passed="4" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1005" name="OceanBatchMatchesScalarAndRejectsInvalidCount" fullname="TitansOfTheSea.Tests.FoundationTests.OceanBatchMatchesScalarAndRejectsInvalidCount" methodname="OceanBatchMatchesScalarAndRejectsInvalidCount" classname="TitansOfTheSea.Tests.FoundationTests" runstate="Runnable" seed="1619239088" result="Passed" start-time="2026-10-02 11:14:07Z" end-time="2026-10-02 11:14:07Z" duration="0.020782" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1002" name="RealProviderReplacesMockAndMockCannotRemoveIt" fullname="TitansOfTheSea.Tests.FoundationTests.RealProviderReplacesMockAndMockCannotRemoveIt" methodname="RealProviderReplacesMockAndMockCannotRemoveIt" classname="TitansOfTheSea.Tests.FoundationTests" runstate="Runnable" seed="2124742440" result="Passed" start-time="2026-10-02 11:14:07Z" end-time="2026-10-02 11:14:07Z" duration="0.001889" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1003" name="SessionResetRemovesServicesAndListeners" fullname="TitansOfTheSea.Tests.FoundationTests.SessionResetRemovesServicesAndListeners" methodname="SessionResetRemovesServicesAndListeners" classname="TitansOfTheSea.Tests.FoundationTests" runstate="Runnable" seed="1320568988" result="Passed" start-time="2026-10-02 11:14:07Z" end-time="2026-10-02 11:14:07Z" duration="0.000857" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1004" name="SupportIsZeroAboveWaterAndBalancesWeightAtHalfDepth" fullname="TitansOfTheSea.Tests.FoundationTests.SupportIsZeroAboveWaterAndBalancesWeightAtHalfDepth" methodname="SupportIsZeroAboveWaterAndBalancesWeightAtHalfDepth" classname="TitansOfTheSea.Tests.FoundationTests" runstate="Runnable" seed="1797418121" result="Passed" start-time="2026-10-02 11:14:07Z" end-time="2026-10-02 11:14:07Z" duration="0.000467" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+          </test-suite>
+          <test-suite type="TestFixture" id="1006" name="GameStateTests" fullname="TitansOfTheSea.Tests.GameStateTests" classname="TitansOfTheSea.Tests.GameStateTests" runstate="Runnable" testcasecount="1" result="Passed" start-time="2026-10-02 11:14:07Z" end-time="2026-10-02 11:14:07Z" duration="0.001582" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1007" name="StateMachineControlsPauseCutsceneAndRespawnTransitions" fullname="TitansOfTheSea.Tests.GameStateTests.StateMachineControlsPauseCutsceneAndRespawnTransitions" methodname="StateMachineControlsPauseCutsceneAndRespawnTransitions" classname="TitansOfTheSea.Tests.GameStateTests" runstate="Runnable" seed="1726025660" result="Passed" start-time="2026-10-02 11:14:07Z" end-time="2026-10-02 11:14:07Z" duration="0.000795" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+          </test-suite>
+          <test-suite type="TestFixture" id="1008" name="SailingTests" fullname="TitansOfTheSea.Tests.SailingTests" classname="TitansOfTheSea.Tests.SailingTests" runstate="Runnable" testcasecount="2" result="Passed" start-time="2026-10-02 11:14:07Z" end-time="2026-10-02 11:14:07Z" duration="0.004636" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1010" name="AnchorCannotReverseVelocityOrCancelBuoyancy" fullname="TitansOfTheSea.Tests.SailingTests.AnchorCannotReverseVelocityOrCancelBuoyancy" methodname="AnchorCannotReverseVelocityOrCancelBuoyancy" classname="TitansOfTheSea.Tests.SailingTests" runstate="Runnable" seed="2045938836" result="Passed" start-time="2026-10-02 11:14:07Z" end-time="2026-10-02 11:14:07Z" duration="0.001910" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1009" name="WindAndSailControlsRespectNoGoAndReefing" fullname="TitansOfTheSea.Tests.SailingTests.WindAndSailControlsRespectNoGoAndReefing" methodname="WindAndSailControlsRespectNoGoAndReefing" classname="TitansOfTheSea.Tests.SailingTests" runstate="Runnable" seed="486975703" result="Passed" start-time="2026-10-02 11:14:07Z" end-time="2026-10-02 11:14:07Z" duration="0.002060" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+          </test-suite>
+          <test-suite type="TestFixture" id="1011" name="TimeWeatherTests" fullname="TitansOfTheSea.Tests.TimeWeatherTests" classname="TitansOfTheSea.Tests.TimeWeatherTests" runstate="Runnable" testcasecount="5" result="Passed" start-time="2026-10-02 11:14:07Z" end-time="2026-10-02 11:14:07Z" duration="0.006847" total="5" passed="5" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1012" name="ClockEmitsEveryCrossedDayAndRestoresWithoutEvents" fullname="TitansOfTheSea.Tests.TimeWeatherTests.ClockEmitsEveryCrossedDayAndRestoresWithoutEvents" methodname="ClockEmitsEveryCrossedDayAndRestoresWithoutEvents" classname="TitansOfTheSea.Tests.TimeWeatherTests" runstate="Runnable" seed="764114443" result="Passed" start-time="2026-10-02 11:14:07Z" end-time="2026-10-02 11:14:07Z" duration="0.001379" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1013" name="DawnDuskAndZeroElapsedTimeHaveDefinedBehaviour" fullname="TitansOfTheSea.Tests.TimeWeatherTests.DawnDuskAndZeroElapsedTimeHaveDefinedBehaviour" methodname="DawnDuskAndZeroElapsedTimeHaveDefinedBehaviour" classname="TitansOfTheSea.Tests.TimeWeatherTests" runstate="Runnable" seed="1914433699" result="Passed" start-time="2026-10-02 11:14:07Z" end-time="2026-10-02 11:14:07Z" duration="0.000365" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1016" name="InstantWeatherRemainsInstantOnFollowingFrames" fullname="TitansOfTheSea.Tests.TimeWeatherTests.InstantWeatherRemainsInstantOnFollowingFrames" methodname="InstantWeatherRemainsInstantOnFollowingFrames" classname="TitansOfTheSea.Tests.TimeWeatherTests" runstate="Runnable" seed="1449397114" result="Passed" start-time="2026-10-02 11:14:07Z" end-time="2026-10-02 11:14:07Z" duration="0.002035" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1014" name="InterruptedWeatherTransitionsStartFromCurrentValues" fullname="TitansOfTheSea.Tests.TimeWeatherTests.InterruptedWeatherTransitionsStartFromCurrentValues" methodname="InterruptedWeatherTransitionsStartFromCurrentValues" classname="TitansOfTheSea.Tests.TimeWeatherTests" runstate="Runnable" seed="1841081427" result="Passed" start-time="2026-10-02 11:14:07Z" end-time="2026-10-02 11:14:07Z" duration="0.000558" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1015" name="SeededSchedulesRepeatAndLightningRequiresStormIntensity" fullname="TitansOfTheSea.Tests.TimeWeatherTests.SeededSchedulesRepeatAndLightningRequiresStormIntensity" methodname="SeededSchedulesRepeatAndLightningRequiresStormIntensity" classname="TitansOfTheSea.Tests.TimeWeatherTests" runstate="Runnable" seed="341504760" result="Passed" start-time="2026-10-02 11:14:07Z" end-time="2026-10-02 11:14:07Z" duration="0.001376" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[Saving results to: C:/Users/SASYAK SUBUDHI/AppData/LocalLow/DefaultCompany/TitansUnity\TestResults.xml
+]]></output>
+            </test-case>
+          </test-suite>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

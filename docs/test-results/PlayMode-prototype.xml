@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="3" result="Passed" total="3" passed="3" failed="0" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-10-02 10:50:38Z" end-time="2026-10-02 10:51:12Z" duration="33.6946509">
+  <test-suite type="TestSuite" id="1013" name="TitansUnity" fullname="TitansUnity" runstate="Runnable" testcasecount="3" result="Passed" start-time="2026-10-02 10:50:38Z" end-time="2026-10-02 10:51:12Z" duration="33.694651" total="3" passed="3" failed="0" inconclusive="0" skipped="0" asserts="0">
+    <properties>
+      <property name="platform" value="PlayMode" />
+    </properties>
+    <test-suite type="Assembly" id="1007" name="TitansOfTheSea.Tests.PlayMode.dll" fullname="C:/Users/SASYAK SUBUDHI/OneDrive/Documents/Titans of the Sea/TitansUnity/Library/ScriptAssemblies/TitansOfTheSea.Tests.PlayMode.dll" runstate="Runnable" testcasecount="3" result="Passed" start-time="2026-10-02 10:50:38Z" end-time="2026-10-02 10:51:12Z" duration="33.683461" total="3" passed="3" failed="0" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="32036" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="PlayMode" />
+        <property name="EditorOnly" value="False" />
+      </properties>
+      <test-suite type="TestSuite" id="1008" name="TitansOfTheSea" fullname="TitansOfTheSea" runstate="Runnable" testcasecount="3" result="Passed" start-time="2026-10-02 10:50:38Z" end-time="2026-10-02 10:51:12Z" duration="33.682409" total="3" passed="3" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <test-suite type="TestSuite" id="1009" name="Tests" fullname="TitansOfTheSea.Tests" runstate="Runnable" testcasecount="3" result="Passed" start-time="2026-10-02 10:50:38Z" end-time="2026-10-02 10:51:12Z" duration="33.681863" total="3" passed="3" failed="0" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <test-suite type="TestFixture" id="1001" name="BuoyancyStabilityTests" fullname="TitansOfTheSea.Tests.BuoyancyStabilityTests" classname="TitansOfTheSea.Tests.BuoyancyStabilityTests" runstate="Runnable" testcasecount="1" result="Passed" start-time="2026-10-02 10:50:38Z" end-time="2026-10-02 10:51:08Z" duration="30.028214" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1002" name="FlatAndSineWaterRemainStableForFiveMinutes" fullname="TitansOfTheSea.Tests.BuoyancyStabilityTests.FlatAndSineWaterRemainStableForFiveMinutes" methodname="FlatAndSineWaterRemainStableForFiveMinutes" classname="TitansOfTheSea.Tests.BuoyancyStabilityTests" runstate="Runnable" seed="979317923" result="Passed" start-time="2026-10-02 10:50:38Z" end-time="2026-10-02 10:51:08Z" duration="30.015249" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="Timeout" value="420000" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[Five-minute flat/sine stability completed. Peak speed: 5.458193
+]]></output>
+            </test-case>
+          </test-suite>
+          <test-suite type="TestFixture" id="1003" name="SailingIntegrationTests" fullname="TitansOfTheSea.Tests.SailingIntegrationTests" classname="TitansOfTheSea.Tests.SailingIntegrationTests" runstate="Runnable" testcasecount="1" result="Passed" start-time="2026-10-02 10:51:08Z" end-time="2026-10-02 10:51:11Z" duration="3.103163" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1004" name="SloopSailsTurnsAndStopsWithoutLosingFlotation" fullname="TitansOfTheSea.Tests.SailingIntegrationTests.SloopSailsTurnsAndStopsWithoutLosingFlotation" methodname="SloopSailsTurnsAndStopsWithoutLosingFlotation" classname="TitansOfTheSea.Tests.SailingIntegrationTests" runstate="Runnable" seed="2098535891" result="Passed" start-time="2026-10-02 10:51:08Z" end-time="2026-10-02 10:51:11Z" duration="3.102371" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[Titans of the Sea — B sandbox ready.
+GameSession: GameSession (fallback=False)
+IOceanSurface: FlatOcean (fallback=True)
+IPlayerInput: SandboxShipControls (fallback=True)
+ITimeOfDay: TimeOfDayService (fallback=False)
+IWeatherService: WeatherService (fallback=False)
+]]></output>
+            </test-case>
+          </test-suite>
+          <test-suite type="TestFixture" id="1005" name="SandboxIntegrationTests" fullname="TitansOfTheSea.Tests.SandboxIntegrationTests" classname="TitansOfTheSea.Tests.SandboxIntegrationTests" runstate="Runnable" testcasecount="1" result="Passed" start-time="2026-10-02 10:51:11Z" end-time="2026-10-02 10:51:12Z" duration="0.548705" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1006" name="GeneratedSandboxConnectsClockWeatherAndOcean" fullname="TitansOfTheSea.Tests.SandboxIntegrationTests.GeneratedSandboxConnectsClockWeatherAndOcean" methodname="GeneratedSandboxConnectsClockWeatherAndOcean" classname="TitansOfTheSea.Tests.SandboxIntegrationTests" runstate="Runnable" seed="128107863" result="Passed" start-time="2026-10-02 10:51:11Z" end-time="2026-10-02 10:51:12Z" duration="0.548092" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[Titans of the Sea — B sandbox ready.
+IOceanSurface: FlatOcean (fallback=True)
+ITimeOfDay: TimeOfDayService (fallback=False)
+IWeatherService: WeatherService (fallback=False)
+Saving results to: C:/Users/SASYAK SUBUDHI/AppData/LocalLow/DefaultCompany/TitansUnity\TestResults.xml
+]]></output>
+            </test-case>
+          </test-suite>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

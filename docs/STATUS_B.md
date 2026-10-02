@@ -1,26 +1,25 @@
-# SESSION HANDOFF
+# Person B status — 2026-10-02
 
-## DONE
-Phase 0 source: exact interfaces, 25 events, registry/bootstrap, mock water, buoyancy.
-Development console; reproducible sandbox/prefab/settings builder; test sources.
-Clock/weather models, services/settings, debug commands and mock wave scaling.
-Actual TitansUnity project created; Unity compiled and generated sandbox/assets.
-9 Unity EditMode + 2 PlayMode tests passed; nine C# clock checks passed.
-Shared layers/tags, Force Text and editor/package version files established.
-Setup, integration notes and full 36-week roadmap.
-## IN PROGRESS
-Interactive visual check and Person A/Main_World integration remain pending.
-## NEXT STEPS
-Open TitansUnity/B_Sandbox_Buoyancy and press Play.
-Commit the actual TitansUnity project on b/foundation-buoyancy; review with A.
-First demo: buoyancy and sailing with time/weather; implement sailing next.
-Shared GitHub setup instructions ready; no repository created/published.
-Local Git foundation commit prepared on b/foundation-buoyancy; no remote yet.
-## OPEN QUESTIONS
-Chosen editor: Unity 6.3 LTS 6000.3.25f1 on both machines.
-A's implementation and Main_World are not available in this workspace.
-## FILES CHANGED
-Assets/_Project/Scripts/{Contracts,Core,Ship,World} and tests.
-tools; README; docs/master, setup, notes, roadmap, verification and handoff.
-## CONTRACT CHANGE REQUESTS
-None. Initial event argument types are recorded in DESIGN_NOTES.md.
+Public repository: https://github.com/SasyakSubudhi/Titans-of-sea
+Full task tracking: CHECKLIST_B.md. The whole Person B goal remains active.
+
+## Verified
+
+Unity 6000.3.25f1 URP project, contracts, services/events, buoyancy and console.
+Clock/weather foundation; game-state transitions and pause/input gating.
+Single-sail sailing, boom trim, rudder and horizontal anchor braking.
+B_Sandbox_Buoyancy, B_Sandbox_Sailing and B_Sandbox_Player, B prefabs and tunable data.
+Player walk/sprint, jump/steps, swimming/diving, ladder landing and moving decks.
+Interaction prompts and wheel/rope/anchor control stations; cutscene deck transport.
+Latest Unity tests: 12 EditMode and 7 PlayMode passed, zero failed.
+Five simulated minutes of eight-point hull stability plus actual scene sailing integration.
+
+## Next
+
+Player stats (health, stamina, hunger/regen/buffs), inventory/storage and equipment.
+Then inventory/treasure/economy/combat/save and the remaining phases in the master document.
+
+## Outstanding validation
+
+Interactive visuals, Main_World, Person A services/art/cutscenes, teammate review, hardware FPS and Windows release build.
+No networking or teammate messaging. No contract changes.

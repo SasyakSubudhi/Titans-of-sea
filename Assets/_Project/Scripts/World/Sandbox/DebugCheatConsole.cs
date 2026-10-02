@@ -41,6 +41,14 @@ namespace TitansOfTheSea.World.Sandbox
             string[] parts = text.Split(new[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
             try
             {
+                if (parts.Length == 2 && parts[0] == "state")
+                {
+                    if (!Enum.TryParse(parts[1], true, out GameState state) || !Enum.IsDefined(typeof(GameState), state))
+                        throw new ArgumentException("Use boot, mainmenu, loading, playing, paused, cutscene, dead or ending.");
+                    Services.Get<GameSession>().Transition(state);
+                    _result = "Game state: " + state;
+                    return;
+                }
                 if (parts.Length == 2 && parts[0] == "time" && float.TryParse(parts[1], NumberStyles.Float, CultureInfo.InvariantCulture, out float hour))
                 {
                     if (Services.Get<ITimeOfDay>() is TimeOfDayService clock) { clock.SetHour(hour); _result = "Set hour: " + hour; }
@@ -86,7 +94,7 @@ namespace TitansOfTheSea.World.Sandbox
                     _result = "Mock wave mode: " + _ocean.Waves;
                     break;
                 case "services": _result = Services.Describe(); break;
-                case "help": _result = "reset | ocean flat/sine | services | time 20 | speed 60 | weather clear/cloudy/fog/rain/storm/auto | pause | resume"; break;
+                case "help": _result = "reset | ocean flat/sine | services | time 20 | speed 60 | weather clear/cloudy/fog/rain/storm/auto | pause | resume | state paused/playing/cutscene/dead"; break;
                 default: _result = "Unknown command. Run help."; break;
             }
         }

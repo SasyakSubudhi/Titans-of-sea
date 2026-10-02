@@ -2,6 +2,7 @@
   "name": "TitansOfTheSea.Ship",
   "references": [
     "TitansOfTheSea.Contracts",
-    "TitansOfTheSea.Core"
+    "TitansOfTheSea.Core",
+    "TitansOfTheSea.Player"
   ]
 }
