@@ -5,7 +5,8 @@
     "TitansOfTheSea.Core",
     "TitansOfTheSea.Ship",
     "TitansOfTheSea.World",
-    "TitansOfTheSea.Sandbox"
+    "TitansOfTheSea.Sandbox",
+    "TitansOfTheSea.Player"
   ],
   "includePlatforms": [
     "Editor"

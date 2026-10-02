@@ -4,7 +4,8 @@
     "TitansOfTheSea.Contracts",
     "TitansOfTheSea.Core",
     "TitansOfTheSea.Ship",
-    "TitansOfTheSea.World"
+    "TitansOfTheSea.World",
+    "TitansOfTheSea.Player"
   ],
   "optionalUnityReferences": [
     "TestAssemblies"

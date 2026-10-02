@@ -33,10 +33,10 @@ Checks mean implementation and sandbox verification passed. Shared-world integra
 
 ### 7.3 Player — `B-PLR`
 
-- [ ] **B-PLR-01** Character controller (CharacterController or capsule + custom physics): walk/run/sprint/jump, swim (surface + dive), climb ladder/rope, step up, stand on a moving ship (**moving platform** — the player must move with the ship deck and not slide off).
+- [x] **B-PLR-01** Character controller (CharacterController or capsule + custom physics): walk/run/sprint/jump, swim (surface + dive), climb ladder/rope, step up, stand on a moving ship (**moving platform** — the player must move with the ship deck and not slide off).
 - [ ] **B-PLR-02** Stats: health, stamina, hunger (slow drain), hit points regen rules, buffs/debuffs (well-fed, wet/cold optional, bleeding optional).
 - [ ] **B-PLR-03** Interaction system: raycast/overlap for "Interact" (doors, chests, wheel, sails, merchants, beds, dig spots).
-- [ ] **B-PLR-04** Reads `IPlayerInput` only; never reads the keyboard directly.
+- [x] **B-PLR-04** Reads `IPlayerInput` only; never reads the keyboard directly.
 - [ ] **B-PLR-05** Equipment: equipped weapon/clothing slots affect stats; hotbar selection.
 
 ### 7.4 Ship systems — `B-SHP`
@@ -158,10 +158,18 @@ Checks mean implementation and sandbox verification passed. Shared-world integra
 
 ## Active work
 
-Sailing and game states are sandbox-tested: 12 EditMode and 3 PlayMode tests passed. Eight-point hull buoyancy is verified; B-SHP-01 remains open until the later ShipDefinition data integration. Next: player movement, swimming, moving decks and wheel/sail interaction. Weather region weighting remains open.
+Prototype checkpoint: 12 EditMode and 7 PlayMode tests passed. Player locomotion, input routing and moving-deck support are now verified in B_Sandbox_Player. Main_World and teammate review remain open.
 
-- [x] ~~Single-sail test sloop: wind thrust, trim, raise/lower, rudder and anchor.~~
+- [x] ~~Single-sail sloop: wind thrust, trim, raise/lower, rudder and anchor.~~
 - [x] ~~Game-state transitions, input gating, pause and clock gating.~~
 - [x] ~~Five-minute eight-point hull stability regression.~~
-- [ ] Player locomotion, interactions and moving-deck sandbox.
-- [ ] Main_World integration and teammate review of the prototype.
+- [x] ~~Walk, sprint logic, jump, steps, surface swimming, dive and ladder landing.~~
+- [x] ~~Translated/rotated deck support and actual sailing in sine waves.~~
+- [x] ~~Wheel/rope/anchor interactions, exclusive occupation and cleanup.~~
+- [x] ~~Cutscene input gating while maintaining deck transport.~~
+- [ ] Player health, stamina, hunger, regeneration and buffs.
+- [ ] Inventory/equipment and remaining interactable implementations.
+- [ ] Brace controls, multiple sails and later ShipDefinition integration.
+- [ ] Main_World integration and teammate review.
+
+Next phase work: player stats, then items/inventory/storage and the sail → dig → sell → save/load loop. Detailed master tasks above remain authoritative; no optional scope cuts have been made.

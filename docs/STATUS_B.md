@@ -8,13 +8,15 @@ Full task tracking: CHECKLIST_B.md. The whole Person B goal remains active.
 Unity 6000.3.25f1 URP project, contracts, services/events, buoyancy and console.
 Clock/weather foundation; game-state transitions and pause/input gating.
 Single-sail sailing, boom trim, rudder and horizontal anchor braking.
-B_Sandbox_Buoyancy and B_Sandbox_Sailing, B prefabs and tunable data.
-Latest Unity tests: 12 EditMode and 3 PlayMode passed, zero failed.
+B_Sandbox_Buoyancy, B_Sandbox_Sailing and B_Sandbox_Player, B prefabs and tunable data.
+Player walk/sprint, jump/steps, swimming/diving, ladder landing and moving decks.
+Interaction prompts and wheel/rope/anchor control stations; cutscene deck transport.
+Latest Unity tests: 12 EditMode and 7 PlayMode passed, zero failed.
 Five simulated minutes of eight-point hull stability plus actual scene sailing integration.
 
 ## Next
 
-Player walk/sprint/jump, swimming, moving decks, interaction targets and wheel/sail stations.
+Player stats (health, stamina, hunger/regen/buffs), inventory/storage and equipment.
 Then inventory/treasure/economy/combat/save and the remaining phases in the master document.
 
 ## Outstanding validation

@@ -29,6 +29,8 @@ namespace TitansOfTheSea.Ship
         public Vector3 Velocity => _body == null ? Vector3.zero : _body.linearVelocity;
         public float LastThrust { get; private set; }
         public bool PlayerAtControls { get; set; }
+        public bool ControlsSteering { get; set; } = true;
+        public bool ControlsSails { get; set; } = true;
         public void Configure(SailingSettings settings) { _settings = settings; }
         private void Awake()
         {
@@ -46,9 +48,10 @@ namespace TitansOfTheSea.Ship
         public void ApplyControls(PlayerInputState controls, float dt)
         {
             if (_settings == null || dt <= 0) return;
-            WheelAngle01 = Mathf.Clamp(controls.SteerAxis, -1, 1);
-            SetSail(_sails[0] + Mathf.Clamp(controls.SailAxis, -1, 1) * _settings.SailRaiseSpeed * dt,
-                _angles[0] + Mathf.Clamp(controls.SailTurnAxis, -1, 1) * _settings.SailTurnSpeed * dt);
+            if (ControlsSteering) WheelAngle01 = Mathf.Clamp(controls.SteerAxis, -1, 1);
+            if (ControlsSails)
+                SetSail(_sails[0] + Mathf.Clamp(controls.SailAxis, -1, 1) * _settings.SailRaiseSpeed * dt,
+                    _angles[0] + Mathf.Clamp(controls.SailTurnAxis, -1, 1) * _settings.SailTurnSpeed * dt);
         }
         private void FixedUpdate()
         {
