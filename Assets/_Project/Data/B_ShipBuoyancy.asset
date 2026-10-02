@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb106d99c40e70149ae804f0e91edd8c, type: 3}
+  m_Name: B_ShipBuoyancy
+  m_EditorClassIdentifier: TitansOfTheSea.Ship::TitansOfTheSea.Ship.BuoyancySettings
+  MassKg: 1000
+  FloatDepth: 0.75
+  LiftMultiplier: 2
+  VerticalDamping: 2
+  LinearDamping: 0.15
+  AngularDamping: 1
+  CentreOfMass: {x: 0, y: -0.35, z: 0}
+  LocalPoints:
+  - {x: -1.2, y: -0.5, z: -2.5}
+  - {x: 1.2, y: -0.5, z: -2.5}
+  - {x: -1.2, y: -0.5, z: 0}
+  - {x: 1.2, y: -0.5, z: 0}
+  - {x: -1.2, y: -0.5, z: 2.5}
+  - {x: 1.2, y: -0.5, z: 2.5}

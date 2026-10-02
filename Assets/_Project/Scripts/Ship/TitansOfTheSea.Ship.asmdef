@@ -1,0 +1,7 @@
+{
+  "name": "TitansOfTheSea.Ship",
+  "references": [
+    "TitansOfTheSea.Contracts",
+    "TitansOfTheSea.Core"
+  ]
+}

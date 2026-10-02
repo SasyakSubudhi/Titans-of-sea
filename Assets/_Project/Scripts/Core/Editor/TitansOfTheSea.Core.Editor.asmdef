@@ -1,0 +1,13 @@
+{
+  "name": "TitansOfTheSea.Core.Editor",
+  "references": [
+    "TitansOfTheSea.Contracts",
+    "TitansOfTheSea.Core",
+    "TitansOfTheSea.Ship",
+    "TitansOfTheSea.World",
+    "TitansOfTheSea.Sandbox"
+  ],
+  "includePlatforms": [
+    "Editor"
+  ]
+}

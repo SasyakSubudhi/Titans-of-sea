@@ -1,0 +1,4 @@
+{
+  "name": "TitansOfTheSea.Sandbox",
+  "references": ["TitansOfTheSea.Contracts", "TitansOfTheSea.Core", "TitansOfTheSea.Ship", "TitansOfTheSea.World"]
+}

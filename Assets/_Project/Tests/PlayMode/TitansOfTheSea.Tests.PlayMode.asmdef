@@ -1,0 +1,12 @@
+{
+  "name": "TitansOfTheSea.Tests.PlayMode",
+  "references": [
+    "TitansOfTheSea.Contracts",
+    "TitansOfTheSea.Core",
+    "TitansOfTheSea.Ship",
+    "TitansOfTheSea.World"
+  ],
+  "optionalUnityReferences": [
+    "TestAssemblies"
+  ]
+}

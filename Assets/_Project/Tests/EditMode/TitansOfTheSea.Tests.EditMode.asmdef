@@ -1,0 +1,15 @@
+{
+  "name": "TitansOfTheSea.Tests.EditMode",
+  "references": [
+    "TitansOfTheSea.Contracts",
+    "TitansOfTheSea.Core",
+    "TitansOfTheSea.Ship",
+    "TitansOfTheSea.World"
+  ],
+  "includePlatforms": [
+    "Editor"
+  ],
+  "optionalUnityReferences": [
+    "TestAssemblies"
+  ]
+}

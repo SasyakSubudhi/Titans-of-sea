@@ -1,0 +1,54 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95af6296119db3d41bca9f06f061b806, type: 3}
+  m_Name: B_Weather
+  m_EditorClassIdentifier: TitansOfTheSea.World::TitansOfTheSea.World.WeatherSettings
+  Seed: 1729
+  InitialWeather: 0
+  InitialWindDirection: {x: 1, y: 0}
+  TransitionSeconds: 30
+  MinWeatherSeconds: 180
+  MaxWeatherSeconds: 360
+  MinLightningSeconds: 8
+  MaxLightningSeconds: 20
+  LightningThreshold: 0.5
+  Profiles:
+  - Type: 0
+    WindSpeed: 6
+    Rain: 0
+    Fog: 0
+    StormIntensity: 0
+    WaveScale: 0.6
+  - Type: 1
+    WindSpeed: 9
+    Rain: 0
+    Fog: 0.1
+    StormIntensity: 0
+    WaveScale: 0.9
+  - Type: 2
+    WindSpeed: 3
+    Rain: 0
+    Fog: 0.8
+    StormIntensity: 0
+    WaveScale: 0.4
+  - Type: 3
+    WindSpeed: 12
+    Rain: 0.65
+    Fog: 0.25
+    StormIntensity: 0
+    WaveScale: 1.3
+  - Type: 4
+    WindSpeed: 22
+    Rain: 1
+    Fog: 0.4
+    StormIntensity: 1
+    WaveScale: 2.2
